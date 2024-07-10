@@ -165,42 +165,8 @@ const Skills = () => {
       </Box>
 
       {/* Soft Skills */}
-      <Box sx={{ mt: 5 }}>
-        <Typography variant="h6">Soft Skills</Typography>
-        {softSkills.map((skill, index) => (
-          <Box
-            key={index}
-            sx={{
-              mt: 2,
-              borderBottom: "1px solid #ddd",
-              pb: 2,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: 3,
-            }}
-          >
-            <TextField
-              label="Soft Skill"
-              fullWidth
-              variant="outlined"
-              margin="normal"
-              name="skill"
-              value={skill.skill}
-              onChange={(e) => handleChange("soft", index, e)}
-              sx={{
-                "& .MuiInputLabel-root": { color: "gray" },
-                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
-              }}
-            />
-            <IconButton
-              sx={{ color: "#ff007b", mt: 1 }}
-              onClick={() => handleRemoveSkill("soft", index)}
-            >
-              <DeleteIcon />
-            </IconButton>
-          </Box>
-        ))}
+      
+      
         <Button
           variant="outlined"
           sx={{ color: "#ff007b", mt: 2 }}
@@ -209,7 +175,7 @@ const Skills = () => {
         >
           Add Soft Skill
         </Button>
-      </Box>
+    
 
       {/* Languages */}
       <Box sx={{ mt: 5 }}>
@@ -259,6 +225,139 @@ const Skills = () => {
                   {level}
                 </MenuItem>
               ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
+            </TextField><TextField
+              label="Proficiency Level"
+              fullWidth
+              variant="outlined"
+              margin="normal"
+              name="proficiency"
+              select
+              value={language.proficiency}
+              onChange={(e) => handleChange("language", index, e)}
+              sx={{
+                "& .MuiInputLabel-root": { color: "gray" },
+                "& .MuiInputLabel-root.Mui-focused": { color: "#ff007b" },
+              }}
+            >
+              {proficiencyLevels.map((level) => (
+                <MenuItem key={level} value={level}>
+                  {level}
+                </MenuItem>
+              ))}
             </TextField>
             <IconButton
               sx={{ color: "#ff007b", mt: 1 }}
@@ -268,14 +367,7 @@ const Skills = () => {
             </IconButton>
           </Box>
         ))}
-        <Button
-          variant="outlined"
-          sx={{ color: "#ff007b", mt: 2 }}
-          onClick={() => handleAddSkill("language")}
-          startIcon={<AddIcon />}
-        >
-          Add Language
-        </Button>
+      
       </Box>
 
       <Button
