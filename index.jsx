@@ -8,6 +8,8 @@ import {
   MenuItem,
   IconButton,
 } from "@mui/material";
+import axios from "axios"
+import webSocket from "webSocket"
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 
@@ -15,13 +17,7 @@ const skillLevels = ["Beginner", "Intermediate", "Advanced", "Expert"];
 const proficiencyLevels = ["Basic", "Conversational", "Fluent", "Native"];
 
 const Skills = () => {
-  const [technicalSkills, setTechnicalSkills] = useState([
-    { skill: "", level: "" },
-  ]);
-  const [softSkills, setSoftSkills] = useState([{ skill: "" }]);
-  const [languages, setLanguages] = useState([
-    { language: "", proficiency: "" },
-  ]);
+
 
   const handleChange = (type, index, event) => {
     const { name, value } = event.target;
